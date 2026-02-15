@@ -1,0 +1,22 @@
+return {
+  {
+    "derektata/lorem.nvim",
+    config = function()
+      require("lorem").opts({
+        sentence_length = "mixed", -- sensible default
+        comma_chance = 0.3,
+        max_commas = 2,
+        debounce_ms = 200,
+        filetypes = {
+          "text",
+          "markdown",
+          "html",
+          "javascript",
+          "typescript",
+          "javascriptreact",
+          "typescriptreact",
+        },
+      })
+    end,
+  },
+}
