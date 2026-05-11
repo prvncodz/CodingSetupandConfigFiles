@@ -1,0 +1,56 @@
+# Font
+font_family JetBrainsMono
+bold_font JetBrainsMono Bold
+italic_font JetBrainsMono Italic
+bold_italic_font JetBrainsMono Bold Italic
+font_size 13.0
+
+
+# Reduce input delay (default is 3ms, lower = faster)
+input_delay 1
+
+# Reduce repaint delay (default is 10ms, lower = faster)
+repaint_delay 5
+
+# Sync to monitor for smoother rendering
+sync_to_monitor no
+
+# Disable unnecessary features for speed
+confirm_os_window_close 0
+enable_audio_bell no
+
+# Scrollback buffer (lower = faster, but less history)
+scrollback_lines 5000
+
+
+Cursor
+cursor #f5e0dc
+cursor_text_color #1e1e2e
+cursor_blink_interval 0
+shell_integration  no-cursor
+
+
+# Window
+window_padding_width 15
+hide_window_decorations yes
+
+# Tab bar (disable if you don't use tabs for speed)
+tab_bar_style powerline
+tab_powerline_style round
+
+# Mouse
+copy_on_select yes
+strip_trailing_spaces smart
+
+# Keybindings
+map ctrl+shift+c copy_to_clipboard
+map ctrl+shift+v paste_from_clipboard
+map ctrl+shift+equal change_font_size all +1.0
+map ctrl+shift+minus change_font_size all -1.0
+map ctrl+shift+0 change_font_size all 0
+
+
+# BEGIN_KITTY_THEME
+# VSCode_Dark
+include current-theme.conf
+# END_KITTY_THEME
